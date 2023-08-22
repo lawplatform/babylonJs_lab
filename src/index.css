@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#my_canvas
+{
+	width:100%;
+	height:100%;
+	touch-action:none;
+}
+
+
+body {
+  }
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
