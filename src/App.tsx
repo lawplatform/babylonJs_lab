@@ -16,12 +16,17 @@ function App() {
 		console.log(view$.get());
 	})
 
-
 	const toggleShow = async () => {
 		const myDiv = document.getElementById("my");
+
+		var animation = anime({
+			targets: '#my',
+			translateX: 250
+		});
 		if (myDiv != null) {
 			myDiv.style.display = "block";
-			gsap.fromTo(".green", { x: 0 }, { x: 100, duration: 2, ease: "power2" });
+			//gsap.fromTo(".green", { x: 0 }, { x: 100, duration: 2, ease: "power2" });
+			animation.play();
 		}
 
 	}
