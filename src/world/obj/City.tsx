@@ -32,7 +32,7 @@ const City: FC = ({
 			<Model
 				name="city"
 				rootUrl={`${baseUrl}`}
-				sceneFilename={`city_full.glb`}
+				sceneFilename={`city_animation.glb`}
 				scaleToDimension={1}
 				position={new Vector3(0, -1, 5)}
 				onModelLoaded={onModelLoaded}
