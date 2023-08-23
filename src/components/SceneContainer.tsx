@@ -14,7 +14,7 @@ const SceneContainer: FC = ({ children }) => (
 
 				<hemisphericLight
 					name="light1"
-					intensity={0.7}
+					intensity={1}
 					direction={new Vector3(0, 1, 0)}
 				/>
 

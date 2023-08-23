@@ -7,6 +7,7 @@ import anime from 'animejs/lib/anime.js';
 import { observable } from "@legendapp/state"
 import { Memo, For, Reactive, Show, Switch } from "@legendapp/state/react"
 import gsap from "gsap";
+import City from "./world/obj/City";
 function App() {
 
 	const view$ = observable(false);
@@ -36,9 +37,9 @@ function App() {
 					<h1 className="text-3xl font-bold underline text-green-400">
 						Hello world!
 					</h1>
+
 					<SceneContainer>
-						<Monkey></Monkey>
-						<ground name="ground" width={6} height={6} />
+						<City></City>
 					</SceneContainer>
 				</div ></div>			</>
 	);
