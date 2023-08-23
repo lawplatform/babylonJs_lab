@@ -4,7 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import SceneContainer from "./components/SceneContainer";
 import RotatingBox from "./obj/RotatingBox";
-
+import Logo from "./world/obj/Logo";
+import Monkey from "./world/obj/Monkey";
+import "@babylonjs/loaders/glTF";
 function App() {
 	const [count, setCount] = useState(0);
 
@@ -16,7 +18,7 @@ function App() {
 					Hello world!
 				</h1>
 				<SceneContainer>
-					<RotatingBox rpm={50} />
+					<Monkey></Monkey>
 					<ground name="ground" width={6} height={6} />
 				</SceneContainer>
 			</div>

@@ -1,2 +1,6 @@
-# React + TypeScript + Vite
-This page using react-babylon-js to test somethin 
+# react-babylonjs lab
+This is Test page for react-babylonJs lab. 
+
+- [x] asset loading 
+- [ ] play Animation
+
