@@ -6,7 +6,6 @@ import Card_AB from "./components/Card_AB";
 import anime from 'animejs/lib/anime.js';
 import { observable } from "@legendapp/state"
 import { Memo, For, Reactive, Show, Switch } from "@legendapp/state/react"
-import gsap from "gsap";
 import City from "./world/obj/City";
 function App() {
 
@@ -18,14 +17,12 @@ function App() {
 
 	const toggleShow = async () => {
 		const myDiv = document.getElementById("my");
-
 		var animation = anime({
 			targets: '#my',
 			translateX: 250
 		});
 		if (myDiv != null) {
 			myDiv.style.display = "block";
-			//gsap.fromTo(".green", { x: 0 }, { x: 100, duration: 2, ease: "power2" });
 			animation.play();
 		}
 
